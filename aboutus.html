@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<title>About us</title>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<!-- Embedded stylesheet -->
+<style>
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+	display: block;
+    font-family: 'Open Sans';
+	color:#7c7c7c;
+}
+p {
+	font-family: 'Open Sans';
+	line-height:2em;
+}
+.about_section{
+	display:block;
+	width:100%;
+}
+.container{
+	max-width:1280px;
+	margin:auto;
+	padding:0 15px;
+}
+.about_container{
+	display:block;
+	padding:45px 45px 15px;
+	background:#cbab65;
+	position:relative;
+	margin:30px 0;
+}
+.row{
+	display:flex;
+}
+.about_left_col{
+	float:left;
+	width:60%;
+	position: relative;
+    z-index: 99;
+}
+.row:before{
+	content:"";
+	background:#fdf4a5;
+	position:absolute;
+	left:0;
+	top:0;
+	height:400px;
+	width:700px;
+	z-index: 9;
+}
+.about_left_col img{
+	width:100%;
+}
+.about_right_col{
+	float:right;
+	width:40%;
+	background:#fff;
+	padding:23px;
+}
+.about_right_col p{
+	font-size:16px;
+	text-align:left;
+	margin-bottom:30px;
+}
+.about_left_col_title{
+	float:left;
+	width:50%;
+}
+.about_left_col_title p{
+	text-align:center;
+	font-weight:600;
+}
+.mobile{
+	display:none
+}
+/* Media Queries  */
+
+@media screen and (max-width: 1440px){
+.about_left_col_title p {
+    font-size: 18px;
+}
+}
+@media screen and (max-width: 1199px){
+.row:before {
+    height: 350px;
+    width: 490px;
+}
+.about_right_col p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.about_left_col_title p {
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 991px){
+.row:before {
+    height: 200px;
+    width: 300px;
+}
+.about_right_col p {
+    font-size: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+}
+.about_left_col_title p {
+    font-size: 12px;
+}
+.about_left_col {
+    width: 50%;
+}
+.about_right_col {
+    width: 50%;
+}
+}
+@media screen and (max-width: 767px){
+.row {
+    display: table !important;
+	width:100% !important;
+}
+.row:before {
+    height: 450px !important;
+    width: 100% !important;
+}
+.about_right_col {
+    float: none !important;
+    width: 100% !important;
+    padding: 23px !important;
+    display: table!important;
+}
+.about_right_col p {
+    font-size: 14px!important;
+    text-align: center!important;
+    margin-bottom: 10px!important;
+    line-height: 1.7em!important;
+}
+.about_left_col {
+    float: left!important;
+    width: 100%!important;
+    position: relative!important;
+    z-index: 99!important;
+}
+.desktop{
+	display:none;
+}
+.mobile{
+	display:block;
+	width: 100%;
+}
+}
+@media screen and (max-width: 575px){
+.row {
+    display: table !important;
+	width:100% !important;
+}
+.row:before {
+    height: 300px !important;
+    width: 100% !important;
+}
+.about_right_col {
+    float: none !important;
+    width: 100% !important;
+    padding: 23px !important;
+    display: table!important;
+}
+.about_right_col p {
+    font-size: 14px!important;
+    text-align: center!important;
+    margin-bottom: 10px!important;
+    line-height: 1.7em!important;
+}
+.about_left_col {
+    float: left!important;
+    width: 100%!important;
+    position: relative!important;
+    z-index: 99!important;
+}
+.desktop{
+	display:none;
+}
+.mobile{
+	display:block;
+}
+.about_container {
+    padding: 45px 45px 45px;
+}
+}
+@media screen and (max-width: 480px){
+.about_container {
+    padding: 45px 45px 45px;
+}	
+.row {
+    display: table !important;
+	width:100% !important;
+}
+.row:before {
+    height: 270px !important;
+    width: 100% !important;
+}
+.about_right_col {
+    float: none !important;
+    width: 100% !important;
+    padding: 23px !important;
+    display: table!important;
+}
+.about_right_col p {
+    font-size: 14px!important;
+    text-align: center!important;
+    margin-bottom: 10px!important;
+    line-height: 1.7em!important;
+}
+.about_left_col {
+    float: left!important;
+    width: 100%!important;
+    position: relative!important;
+    z-index: 99!important;
+}
+.desktop{
+	display:none;
+}
+.mobile{
+	display:block;
+	width: 100% !important;
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+}
+}
+@media screen and (max-width: 375px){
+.about_container {
+    padding: 45px 45px 45px;
+}	
+.row {
+    display: table !important;
+	width:100% !important;
+}
+.row:before {
+    height: 175px !important;
+    width: 100% !important;
+}
+.about_right_col {
+    float: none !important;
+    width: 100% !important;
+    padding: 23px !important;
+    display: table!important;
+}
+.about_right_col p {
+    font-size: 14px!important;
+    text-align: center!important;
+    margin-bottom: 10px!important;
+    line-height: 1.7em!important;
+}
+.about_left_col {
+    float: left!important;
+    width: 100%!important;
+    position: relative!important;
+    z-index: 99!important;
+}
+.desktop{
+	display:none;
+}
+.mobile{
+	display:block;
+	width: 100% !important;
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+}
+}
+/*Start iPhone 14 Pro Media Query for min-width*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+                    only screen and (min--moz-device-pixel-ratio: 3),
+                    only screen and (-o-min-device-pixel-ratio: 3/1),
+                    only screen and (min-device-pixel-ratio: 3){ 
+		.about_container {
+    padding: 45px 45px 45px;
+}	
+.row {
+    display: table !important;
+	width:100% !important;
+}
+.row:before {
+    height: 175px !important;
+    width: 100% !important;
+}
+.about_right_col {
+    float: none !important;
+    width: 100% !important;
+    padding: 23px !important;
+    display: table!important;
+}
+.about_right_col p {
+    font-size: 14px!important;
+    text-align: center!important;
+    margin-bottom: 10px!important;
+    line-height: 1.7em!important;
+}
+.about_left_col {
+    float: left!important;
+    width: 100%!important;
+    position: relative!important;
+    z-index: 99!important;
+}
+.desktop{
+	display:none;
+}
+.mobile{
+	display:block;
+	width: 100% !important;
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+}			
+}
+/*End iPhone 14 Pro Media Query for min-width*/
+</style>
+</head>
+
+<body>
+	<section class="about_section">
+    	<div class="container">
+           <div class="about_container">
+        	<div class="row">
+            	<div class="about_left_col">
+                	<img src="../Photo_About_Us.png" alt="Photo_About_Us" />
+                <div class="about_left_col_title mobile">
+                    <p>Simone Resende - Owner</p>
+                </div>
+                </div>
+                <div class="about_right_col">
+                <p>Beauty Built" is female-owned and based in Florida.
+We were a beauty school first that evolved into an
+online store with occasional trainings in various
+permanent makeup techniques. Most of our clients
+are female independent small business owners who
+
+face all sorts of challenges just like us.</p>
+
+<p>For this reason, we offer you products that we trust
+and have seen their efficacy throughout the years, so
+
+you can buy and use them with peace of mind.</p>
+
+<p>We believe that beauty is a state of mind that can be
+achieved by having a positive attitude towards life
+and good healthy habits like eating, exercising, and
+sleeping well. With that, we can go on about our lives,
+sharing our knowledge and love with the world.</p>
+
+<p>We thank you for your loyalty and wish you a great shopping experience!</p>
+</p>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="about_left_col_title desktop">
+                    <p>Simone Resende - Beauty Built CEO</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+</body>
+</html>
